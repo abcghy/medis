@@ -80,9 +80,9 @@ const renderPlugins = [
   new CheckerPlugin(),
   new webpack.ProvidePlugin({React: 'react'}),
 ]
-if (mode === 'production') {
-  renderPlugins.push(new BundleAnalyzerPlugin())
-}
+//if (mode === 'production') {
+  //renderPlugins.push(new BundleAnalyzerPlugin())
+//}
 const renderer = Object.assign({}, base, {
   target: 'electron-renderer',
   output: Object.assign({}, base.output, {
